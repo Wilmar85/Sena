@@ -39,47 +39,29 @@ $title = 'main';
 
       <div class="col-xl-9">
         <div class="container">
-          <h2 class="text-center">Seguimiento a Cotizaciones</h2>
+          <h2 class="text-center">Crear cliente</h2>
         </div>
 
         <div class="container d-flex justify-content-center align-items-center mt-5">
-          <table class="table">
-            <thead>
-              <tr>
-                <th scope="col">Id Cotizacion</th>
-                <th scope="col">Cliente</th>
-                <th scope="col">Proyecto</th>
-                <th scope="col">Ciudad</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td colspan="2">Larry the Bird</td>
-                <td>@twitter</td>
-              </tr>
-            </tbody>
-          </table>
 
+          <form action="../model/Cliente/crear" method="post" class="form-group>
+            <label for=" nombre">Nombre del Cliente:</label>
+            <input class="form-control" type="text" id="nombre" name="nombre" required><br><br>
+
+            <label for="ciudad">Ciudad del Cliente:</label>
+            <input class="form-control" type="text" id="ciudad" name="ciudad" required><br><br>
+
+            <label for="telefono">Teléfono del Cliente:</label>
+            <input class="form-control" type="tel" id="telefono" name="telefono"><br><br>
+
+            <label for="correo">Correo del Cliente:</label>
+            <input class="form-control" type="email" id="correo" name="correo" required><br><br>
+
+            <input class="btn btn-success" type="submit" value="Crear Cliente">
+          </form>
         </div>
-      </div>
 
-    </div>
-  </div>
-
-  <?php require("content/script.php"); ?>
+        <?php require("content/script.php"); ?>
 </body>
 
 </html>
